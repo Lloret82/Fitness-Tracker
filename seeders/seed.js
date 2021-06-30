@@ -1,7 +1,8 @@
+require('dotenv').config();
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/workout", {
+mongoose.connect("mongodb+srv://andrea:Adb12.09.82@cluster0.8f3ol.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
