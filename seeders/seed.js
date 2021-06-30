@@ -2,7 +2,7 @@ require('dotenv').config();
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb+srv://andrea:Adb12.09.82@cluster0.8f3ol.mongodb.net/workout?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://andrea:<adb120982>@cluster0.8f3ol.mongodb.net/workout?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
