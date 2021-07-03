@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-image: linear-gradient(to right, grey,yellow, black);
   color: #ffffff;
   height: 80px;
   padding: 10px;
@@ -38,10 +38,9 @@ header {
   padding-top: 80px;
   text-align: center;
   font-size: 1.5rem;
-}
+  color: white;
+  
 
-header h1 {
-  transform: skewX(-2deg);
 }
 
 select {
@@ -96,14 +95,17 @@ input {
 }
 
 .wrapper {
-  background-color: #f2f8ff;
+  background-image: url(https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zml0bmVzc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60);
   padding-bottom: 100px;
+  object-fit: contain;
 }
 
 .card.m-auto,
 .m-auto {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  width: 500px;
+  width: 800px;
 }
 
 form .workout-type,
@@ -372,6 +374,26 @@ form > button {
   width: 350px;
 } */
 
+.new-button-2 {
+  color: #FFF;
+  border: 2px solid black;
+  border-radius: 0px;
+  padding: 18px;
+  display: inline-block;
+  font-size: 28px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 yellow;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  
+}
+
+.slide_down:hover {
+  box-shadow: inset 0 100px 0 0 yellow;
+}
+
 .prev-workout button {
   margin: 10px;
 }
@@ -396,6 +418,10 @@ form > button {
   display: flex;
   height: 75px;
   margin-top: 30px;
+}
+
+.raised{
+  width: 500px !important;
 }
 
 .buttons .ui.button {
